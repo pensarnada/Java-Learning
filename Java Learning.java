@@ -37,6 +37,9 @@ public class Classlearning {
 		System.out.println("a: " + a);
 		System.out.println("b: " + b);
 		System.out.println("c: " + c);
+		System.out.println("If we write only a+b+c, it does not prints a,b,c... "
+				+ "It sums them and prints summation as: "+(a+b+c));
+		System.out.println(a+b+c);
 		//then prints a: value of a, b: value of b, c: value of c...
 	}
 	
