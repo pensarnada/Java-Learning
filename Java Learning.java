@@ -1,15 +1,21 @@
 package javalearning;
 
+import java.util.Scanner;
+
 public class Classlearning {
 	
 	static void ArrayStuff() 
 	{
-		int n=5; //n here is the length of myArray
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the length of your array: ");
+		int n = scanner.nextInt(); //n here is the length of myArray
+		System.out.println("Enter increase amount: ");
+		int a = scanner.nextInt(); //We can get another inputs by using Scanner class
 		long [] myArray = new long[n];
 		for (int i=0;i<n;i++) // initiate i as 0 and increase 1 at every iteration
 							 //	until i is not lower than n
 		{
-			myArray[i]=i+1; // At every iteration adds 1 to i and prints it.
+			myArray[i]=i+a; // At every iteration adds "int a" to "int i" and prints it.
 			System.out.println(myArray[i]);
 		}
 	}
