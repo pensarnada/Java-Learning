@@ -77,6 +77,38 @@ public class Classlearning {
 		
 		
 	}
+	static void SwitchcaseStuff() {
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();
+		switch(n) {
+		case 1:
+			System.out.println("1");
+			break;
+		case 2:
+			System.out.println("2");
+			break;
+		case 3:
+			System.out.println("3");
+			break;
+		case 0:
+			System.out.println("Done.");
+			break;
+		default:
+			System.out.println("You did not enter any valid value!");
+			break;
+		}
+	}
+	static void ForStuff() {
+		for (int i=0;i<=10;i++) { //i counts 0 to 10 (because of i<=10)
+			System.out.println("i -> "+i); //when i turns, it prints i
+			for (int j=0;j<5;j++) { //at every iteration i, we count j 0 to 4 (because of j<5)
+				System.out.println(i+j); //at every nested iteration, it sums a and b and prints.
+				
+				//Nested for loop ends here.
+			}
+		}
+			
+	}
 	
 	public static void main(String[] args) {
 		// We call our methods in our main
@@ -84,6 +116,8 @@ public class Classlearning {
 		StringStuff();
 		PrintStuff();
 		ifStuff();
+		SwitchcaseStuff();
+		ForStuff();
 		
 	}
 	
