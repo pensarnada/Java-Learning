@@ -109,6 +109,29 @@ public class Classlearning {
 		}
 			
 	}
+	static void WhileStuff() {
+		int n=50; //initiate n as 50
+		int a=20; //initiate a as 20
+		int response1 = 0; //initiate response1 as 0
+		int response2 = 0; //initiate response1 as 0
+		while (response1==0) { //if response1 is equal to 0, launch the statement below.
+			System.out.println("n: "+n);
+			n--; //decrease n
+			if (n==0) { //if n is equal to 0...
+				response1=1; //assign 1 to response1 (it means response1 is no longer be "0")
+			} 
+			//Until here, if response1 is still 0, launch the statement again. Otherwise, it breaks.
+		}
+		do { //do the statement below first.
+			System.out.println("a: "+a);
+			a--; //decrease a
+			if (a==0) { //if a is equal to 0....
+				response2=1; //assign 1 to response2 (it means response2 is no longer be "0")
+			}
+		
+		} while (response2==0); //Check if response2 is 0 or not. If it is, launch the statement above again.
+								//Otherwise, do not.
+	}
 	
 	public static void main(String[] args) {
 		// We call our methods in our main
@@ -118,6 +141,7 @@ public class Classlearning {
 		ifStuff();
 		SwitchcaseStuff();
 		ForStuff();
+		WhileStuff();
 		
 	}
 	
