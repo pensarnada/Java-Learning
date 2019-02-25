@@ -54,12 +54,30 @@ public class Classlearning {
 		}
 		else {
 			System.out.println("They are equal."); //If x=n, prints this.
-		}
+		} //Basic if/else statements end here.
+		
+		//This below is Nested if/else statement:
 		if ( x < n ) //If x is smaller than n...
 		{
-			x = n; //Put n's value into x
+			if (n>=1000) //Also if n is greater or equal than 1000...
+			{
+				x = n+2; //Puts n+2 into x
+			}
+			else {
+				x = n; //Puts n's value into x
+			}
 		}
-		System.out.println(x); //Prints x anyway
+		else if ( x > n ) //If x is greater than n...
+		{
+			x = n+1; //Puts n+1 into x
+		}
+		else //If, If cases are not true, use this case.(We have only one option left as equality "=" )
+		{
+			x = n-1; //Puts n-1 into x
+		}
+		//Nested if/else statements end here.
+		
+		System.out.println(x); //Prints x anyway.
 		
 		
 	}
