@@ -42,6 +42,27 @@ public class Classlearning {
 		System.out.println(a+b+c);
 		//then prints a: value of a, b: value of b, c: value of c...
 	}
+	static void ifStuff() 
+	{
+		Scanner scanner = new Scanner(System.in); 
+		System.out.println("Enter a value: ");
+		int x = 0; //Initiate x as 0...
+		int n = scanner.nextInt(); //Gets an input by Scanner class and puts into n...
+		if (x!=n) //If x is not equal to n...
+		{
+			System.out.println("They are not equal!"); //If x!=n, prints this.
+		}
+		else {
+			System.out.println("They are equal."); //If x=n, prints this.
+		}
+		if ( x < n ) //If x is smaller than n...
+		{
+			x = n; //Put n's value into x
+		}
+		System.out.println(x); //Prints x anyway
+		
+		
+	}
 	
 	public static void main(String[] args)
 	{
@@ -49,6 +70,7 @@ public class Classlearning {
 		ArrayStuff(); 
 		StringStuff();
 		PrintStuff();
+		ifStuff();
 		
 	}
 	
