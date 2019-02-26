@@ -1,9 +1,9 @@
 package Car;
 
-public class Car implements ICar {
-	int numberofwheels = 2;
-	double thespeed = 0;
-	int horsepower = 0;
+public class Car extends Extras implements ICar {
+	private int numberofwheels = 2;
+	private double thespeed = 0;
+	private int horsepower = 0;
 	
 	public int getWheels() {
 		return this.numberofwheels;
@@ -24,6 +24,13 @@ public class Car implements ICar {
 	public Car(int wheels,double speed) {
 		this.numberofwheels = wheels;
 		this.thespeed = speed;
+	}
+	public void sethorsepower(int hp) {
+		this.horsepower = hp;
+	}
+		
+	public int gethorsepower() {
+		return this.horsepower;
 	}
 	
 }
