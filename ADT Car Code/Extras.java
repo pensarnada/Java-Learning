@@ -1,12 +1,11 @@
 package Car;
 
 public abstract class Extras {
-	boolean accidenthappened = false;
+	public abstract void setAccident();
 	
-	public void accident() {
-		this.accidenthappened = true;
-	}
-	public abstract void sethorsepower(int hp);
+	public abstract boolean getAccident();
+	
+	public abstract void setHorsepower(int hp);
 
-	public abstract int gethorsepower();
+	public abstract int getHorsepower();
 }

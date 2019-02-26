@@ -4,6 +4,7 @@ public class Car extends Extras implements ICar {
 	private int numberofwheels = 2;
 	private double thespeed = 0;
 	private int horsepower = 0;
+	private boolean accidenthappened = false;
 	
 	public int getWheels() {
 		return this.numberofwheels;
@@ -25,12 +26,20 @@ public class Car extends Extras implements ICar {
 		this.numberofwheels = wheels;
 		this.thespeed = speed;
 	}
-	public void sethorsepower(int hp) {
+	public void setHorsepower(int hp) {
 		this.horsepower = hp;
 	}
 		
-	public int gethorsepower() {
+	public int getHorsepower() {
 		return this.horsepower;
+	}
+	
+	public void setAccident() {
+		this.accidenthappened = true;
+	}
+	
+	public boolean getAccident() {
+		return this.accidenthappened;
 	}
 	
 }
