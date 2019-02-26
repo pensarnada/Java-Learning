@@ -21,7 +21,7 @@ public class Car implements ICar {
 		this.thespeed = thespeed;
 	}
 	
-	public void CarSet(int wheels,double speed) {
+	public Car(int wheels,double speed) {
 		this.numberofwheels = wheels;
 		this.thespeed = speed;
 	}
