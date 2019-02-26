@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Classlearning {
 	
-	static void ArrayStuff() {
+	static void ArrayMethod() {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the length of your array: ");
 		int n = scanner.nextInt(); //n here is the length of myArray
@@ -18,7 +18,7 @@ public class Classlearning {
 		}
 	}
 	
-	static void StringStuff() {
+	static void StringMethod() {
 		String s1 = "Hello ", s2 = "Wolrd!";
 		String s3 = s1 + s2;
 		System.out.println(s1+"+ "+s2+" = "+s3);
@@ -26,7 +26,7 @@ public class Classlearning {
 		//And merge them together in String variable s3
 	}
 	
-	static void PrintStuff() {
+	static void PrintMethod() {
 		int a = 5, b, c; //initiate int a, int b, int c and put 5 into a
 		b = a + 5; //Summation a and 5 into b
 		c = a * b; //Multiplication a and b into c
@@ -38,7 +38,8 @@ public class Classlearning {
 		System.out.println(a+b+c);
 		//then prints a: value of a, b: value of b, c: value of c...
 	}
-	static void ifStuff() 
+	
+	static void ifMethod() 
 	{
 		Scanner scanner = new Scanner(System.in); 
 		System.out.println("Enter a value: ");
@@ -77,7 +78,8 @@ public class Classlearning {
 		
 		
 	}
-	static void SwitchcaseStuff() {
+	
+	static void SwitchcaseMethod() {
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
 		switch(n) {
@@ -98,7 +100,8 @@ public class Classlearning {
 			break;
 		}
 	}
-	static void ForStuff() {
+	
+	static void ForMethod() {
 		for (int i=0;i<=10;i++) { //i counts 0 to 10 (because of i<=10)
 			System.out.println("i -> "+i); //when i turns, it prints i
 			for (int j=0;j<5;j++) { //at every iteration i, we count j 0 to 4 (because of j<5)
@@ -109,7 +112,7 @@ public class Classlearning {
 		}
 			
 	}
-	static void WhileStuff() {
+	static void WhileMethod() {
 		int n=50; //initiate n as 50
 		int a=20; //initiate a as 20
 		int response1 = 0; //initiate response1 as 0
@@ -135,13 +138,13 @@ public class Classlearning {
 	
 	public static void main(String[] args) {
 		// We call our methods in our main
-		ArrayStuff(); 
-		StringStuff();
-		PrintStuff();
-		ifStuff();
-		SwitchcaseStuff();
-		ForStuff();
-		WhileStuff();
+		ArrayMethod(); 
+		StringMethod();
+		PrintMethod();
+		ifMethod();
+		SwitchcaseMethod();
+		ForMethod();
+		WhileMethod();
 		
 	}
 	
