@@ -7,5 +7,5 @@ public interface ICar {
 	
 	double getSpeed();
 	
-	void getSpeed(double thespeed);
+	void setSpeed(double thespeed);
 }

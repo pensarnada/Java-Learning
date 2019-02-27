@@ -18,7 +18,7 @@ public class Car extends Extras implements ICar {
 		return this.thespeed;
 	}
 		
-	public void getSpeed(double thespeed) {
+	public void setSpeed(double thespeed) {
 		this.thespeed = thespeed;
 	}
 	
