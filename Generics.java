@@ -26,7 +26,7 @@ package javalearning;
 			
 			Generics<Integer> obj = new Generics<>();
 			//Defined an obj as Integer type by calling "Generics" class and it's Constructor.
-			
+			obj.value=5;
 			obj.Show();//Prints "obj" as value like we defined at "Show" method.
 		}
 	}
