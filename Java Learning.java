@@ -1,5 +1,7 @@
 package javalearning;
 
+import java.awt.List;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Classlearning {
@@ -136,6 +138,18 @@ public class Classlearning {
 								//Otherwise, do not.
 	}
 	
+	public static void Generics() {
+		ArrayList<Integer> myList = new ArrayList<Integer>();
+		//These "<Integer>" parts are generics, it means, you cannot put anything,
+		//instead of integers, only integer additions possible.
+		myList.add(3); //Adds 3 into the myList
+		myList.add(5); //Adds 5 into the myList
+		myList.add(7); //Adds 7 into the myList
+		//myList.add("John"); //This does not work for our ArrayList, 
+							//because it's type must be integer.
+		System.out.println(myList); //[3, 5, 7]
+	}
+	
 	public static void main(String[] args) {
 		// We call our methods in our main
 		ArrayMethod(); 
@@ -145,6 +159,7 @@ public class Classlearning {
 		SwitchcaseMethod();
 		ForMethod();
 		WhileMethod();
+		Generics();
 		
 	}
 	
